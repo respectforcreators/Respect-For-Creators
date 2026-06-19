@@ -1,0 +1,117 @@
+﻿<div id="submit-page" class="main-info">
+    <div class="rfc-page-header">
+        <div class="header-context">
+            <span class="breadcrumb">Community</span>
+            <span class="separator">/</span>
+            <span class="current-category">Contribution</span>
+        </div>
+
+        <h1 class="header-title">
+            Creator <span class="neon-text">Submit</span>
+        </h1>
+
+        <div class="header-line"></div>
+
+        <p class="subtitle">
+            Join our curated gallery of modern web effects. Share your creativity and
+            become part of the RFC ecosystem.
+        </p>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-box">
+            <h3>Submission Rules</h3>
+            <p>
+                Use <code>.rfc-wrapper</code> and <code>--neon: #e1ff00</code> for your CSS. Clean, performant code is essential for our gallery aesthetic.
+            </p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Licensing & Credits</h3>
+            <p>
+                Submissions are open-source. We standardize class names with <code>rfc-</code> prefixes and guarantee a permanent credit line for your authorship.
+            </p>
+        </div>
+
+        <div class="feature-box highlight">
+            <h3>Exposure & Impact</h3>
+            <p>
+                Showcase your work to thousands. We provide full credits, portfolio links, and track real-time copy statistics for every unique interaction.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="feature-box highlight" style="transform: none; margin-top: 30px; text-align: left;">
+        <form id="submissionForm" onsubmit="handleSubmissionSubmit(event)">
+
+            <input type="text" name="extra_check" style="display:none !important" tabindex="-1" autocomplete="off">
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">CREATOR NAME</label>
+                    <input type="text" name="creator_name" placeholder="How should we credit you?" required
+                           style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); color: white; padding: 10px 0; font-family: var(--font-main); outline: none;">
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">YOUR EMAIL</label>
+                    <input type="email" name="creator_email" placeholder="For feedback only" required
+                           style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); color: white; padding: 10px 0; font-family: var(--font-main); outline: none;">
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">PORTFOLIO / GITHUB LINK</label>
+                    <input type="url" name="portfolio_link" placeholder="https://..."
+                           style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); color: white; padding: 10px 0; font-family: var(--font-main); outline: none;">
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">ANIMATION TITLE & SHORT DESCRIPTION</label>
+                <input type="text" name="anim_title" placeholder="Give your effect a name" required
+                       style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); color: white; padding: 10px 0; font-family: var(--font-main); outline: none;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">HTML CODE</label>
+                <textarea name="html_code" rows="4" placeholder='&lt;div class="rfc-wrapper"&gt;&#10;    &lt;!-- Your animation code here --&gt;&#10;&lt;/div&gt;' required
+                          style="width: 100%; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #fff; padding: 15px; font-family: monospace; outline: none; resize: vertical;"></textarea>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">CSS CODE</label>
+                <textarea name="css_code" rows="9" placeholder=':root { --neon: #e1ff00; }&#10;&#10;.rfc-wrapper {&#10;    display: flex;&#10;    justify-content: center;&#10;    align-items: center;&#10;    height: 100vh;&#10;}&#10;/* Your effect CSS below */' required
+                          style="width: 100%; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #fff; padding: 15px; font-family: monospace; outline: none; resize: vertical; "></textarea>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">JAVASCRIPT CODE (OPTIONAL)</label>
+                <textarea name="js_code" rows="6" placeholder="Paste your JS here (if needed)..."
+                          style="width: 100%; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #fff; padding: 15px; font-family: monospace; outline: none; resize: vertical;"></textarea>
+            </div>
+
+            <div style="margin-bottom: 30px; display: flex; flex-direction: column; gap: 15px;">
+                <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 0.85rem; color: rgba(255,255,255,0.7);">
+                    <input type="checkbox" name="terms" required
+                           style="appearance: none; -webkit-appearance: none; width: 18px; height: 18px; border: 1px solid var(--neon); border-radius: 3px; background: rgba(0,0,0,0.4); cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
+                    <span>I confirm that I am the author of this code or have the right to share it.</span>
+                </label>
+
+                <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 0.85rem; color: rgba(255,255,255,0.7);">
+                    <input type="checkbox" name="license" required
+                           style="appearance: none; -webkit-appearance: none; width: 18px; height: 18px; border: 1px solid var(--neon); border-radius: 3px; background: rgba(0,0,0,0.4); cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
+                    <span>I agree that my code will be published under an open-source license.</span>
+                </label>
+
+                <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 0.85rem; color: rgba(255,255,255,0.7);">
+                    <input type="checkbox" name="editorial_rights" required
+                           style="appearance: none; -webkit-appearance: none; width: 18px; height: 18px; border: 1px solid var(--neon); border-radius: 3px; background: rgba(0,0,0,0.4); cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
+                    <span>I agree to RFC-standardization and color refinements while preserving my author credit.</span>
+                </label>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end;">
+                <button type="submit" class="send-button" style="position: static; padding: 12px 40px;">Send for Review</button>
+            </div>
+        </form>
+    </div>
+</div>

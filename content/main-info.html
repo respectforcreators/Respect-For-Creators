@@ -1,0 +1,198 @@
+﻿<div class="main-info">
+    <div class="rfc-page-header">
+        <div class="header-context">
+            <span class="breadcrumb">Dashboard</span>
+            <span class="separator">/</span>
+            <span class="current-category">Overview</span>
+        </div>
+
+        <h1 class="header-title">
+            Welcome to <span class="neon-text">RFC</span>
+        </h1>
+
+        <div class="header-line"></div>
+
+        <p class="subtitle">
+            A curated library of high-performance web scripts and modern CSS3 animations.
+            Built to empower developers while preserving the recognition every creator deserves.
+        </p>
+    </div>
+
+    <section class="features">
+        <div class="feature-grid">
+            <div class="feature-box stat-dashboard">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h3>Library Insights</h3>
+                    <span class="status-pulse" title="System Live"></span>
+                </div>
+
+                <div class="stat-container">
+                    <div class="stat-item">
+                        <span class="stat-label">UI Loader</span>
+                        <span class="stat-value" id="count-ui-loader">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">UI Motion</span>
+                        <span class="stat-value" id="count-ui-motion">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">UI Button</span>
+                        <span class="stat-value" id="count-ui-button">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Assets</span>
+                        <span class="stat-value" id="count-total">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Contributors</span>
+                        <span class="stat-value" id="count-creators">--</span>
+                    </div>
+                    <div class="stat-item" style="border-bottom: none;">
+                        <span class="stat-label">Latest</span>
+                        <span class="stat-value" id="latest-asset">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-box highlight">
+                <h3>Submit Your Work</h3>
+                <p>Become part of the collection! Share your unique CSS animations with the community. Every featured script includes permanent credits and a direct link to your portfolio to honor your contribution.</p>
+            </div>
+
+            <div class="feature-box highlight">
+                <h3>Support the Vision</h3>
+                <p>This platform is non-profit and ad-free. Your contributions don't just cover hosting; they support the countless hours of manual coding, curation, and development required to keep this library alive and growing.</p>
+            </div>
+        </div>
+        </section>
+
+
+            <div class="masterpiece-row">
+                <div class="feature-box highlight-border masterpiece-wide" id="latest-showcase-container">
+                    <div class="showcase-header">
+                        <h3 style="margin:0; font-size: 1.1rem; color: var(--neon); font-family: var(--font-heading); font-weight: 300; letter-spacing: 0.05em;">LATEST MASTERPIECE</h3>
+                        <button class="refresh-btn" id="featured-refresh-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;"><path d="M23 4v6h-6"></path><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="showcase-body" id="masterpiece-viewport" style="height: 300px; margin-top: 12px; position: relative; border-radius: 4px; overflow: hidden; background: #07090c; border: 1px solid rgba(255,255,255,0.03);">
+                        <iframe id="featured-iframe" frameborder="0" scrolling="no" style="width: 100%; height: 100%; display: block;"></iframe>
+                    </div>
+
+                    <div class="showcase-footer" style="margin-top: 15px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+                        <div class="footer-left" style="min-width: 180px; margin-bottom: 5px;">
+                            <span id="featured-effect-name" style="font-size: 0.7rem; color: var(--neon); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">
+                                INITIALIZING...
+                            </span>
+                        </div>
+
+                        <div class="footer-right">
+                            <a href="#" id="featured-masterpiece-link" class="rfc-link-simple primary" style="font-size: 0.7rem; white-space: nowrap;">
+                                EXPLORE ALL ASSETS →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="philosophy-section">
+                <div class="highlight-border full-width">
+                    <h2>The Philosophy of Honest Code</h2>
+                    <p>
+                        Web development is inherently transparent, and we believe that the ability to learn from each other is what makes our community great. On this platform, <strong>copying is a compliment</strong> - it’s a testament to a creator’s skill and your eye for quality.
+                    </p>
+
+                    <p>
+                        To ensure your "compliment" doesn't lead to technical headaches, we’ve optimized our showcase for <strong>Safe Integration</strong>:
+                    </p>
+
+                    <ul class="philosophy-list">
+                        <li>
+                            <span class="highlight-text">Export-Ready Code (The .rfc- Prefix)</span>
+                            While we develop with standard classes, we manually "clean" the code before it enters our showcase. Every snippet you see is prepared with the unique <code>.rfc-</code> prefix (e.g., <code>.rfc-logo</code>). This ensures that the code you copy stays in its own lane and never interferes with your existing CSS.
+                        </li>
+                        <li>
+                            <span class="highlight-text">Full-Scale iFrame Isolation</span>
+                            We use strict iFrame isolation to present every animation in its own "laboratory environment." This guarantees that the code you copy is 100% complete and independent of any hidden site-wide styles.
+                        </li>
+                        <li>
+                            <span class="highlight-text">Transparency as a Tool</span>
+                            We don't hide our logic. We believe that honest, well-structured code is the best way to help you experiment, learn, and improve your own projects without fear of breaking things.
+                        </li>
+                    </ul>
+
+                    <p class="quote">
+                        <em>"Respect for Creators means delivering code that is as polite as it is powerful: It thrives in your project without disturbing what you’ve already built."</em>
+                    </p>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="feature-grid">
+
+                    <div class="feature-box">
+                        <h3>Interactive Loaders</h3>
+                        <p>Replace static waiting with cinematic motion. Specialized in lightweight, high-impact loading sequences and seamless page transitions that keep users engaged during every state change.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <h3>Advanced Templates</h3>
+                        <p>Utilize our standardized RFC-Framework. Every component follows a strict logic (IDs 7004+, 100vh wrappers, and #e1ff00 accents) to ensure perfect compatibility and professional deployment.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <h3>CSS3 Power</h3>
+                        <p>Explore creative keyframe effects and advanced hover styles. Pure CSS logic designed for maximum performance and easy customization—recolored in neon yellow where excellence meets style.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <h3>Respecting Credits</h3>
+                        <p>The core of our mission: "Respect for Creators". All scripts are free for your projects, provided the original author license and source credits in the code remain untouched.</p>
+                    </div>
+
+                    <div class="feature-box highlight">
+                        <h3>The Component Lab</h3>
+                        <p>Every asset is a blueprint. We believe in the power of shared logic — feel free to dissect, refactor, and amplify our code to build your own digital masterpieces.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>JavaScript Snippets</h3>
+                        <p>Practical UI interactions and lightweight logic. Simple, performance-optimized scripts that add life to your components without the unnecessary overhead of heavy libraries.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <h3>Live & Isolated</h3>
+                        <p>Experience every animation in real-time. Our isolation technique ensures you test effects under laboratory conditions, ensuring they work perfectly before you integrate them into your site.</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <h3>Curated Growth</h3>
+                        <p>Quality over quantity. Our library is continuously expanding through manual review, ensuring that only the most robust and elegant community submissions make the cut.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Open Source Spirit</h3>
+                        <p>Fueling the web with transparency. We provide fully accessible source code to encourage learning, remixing, and the evolution of modern web design techniques.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="rfc-page-header" style="margin-top: 100px; text-align: center; animation: headerSlideIn 1.2s ease-out forwards;">
+                <h2 class="header-title" style="font-size: clamp(1.5rem, 4vw, 2.2rem);">
+                    Why <span class="neon-text">RESPECT FOR CREATORS?</span>
+                </h2>
+
+                <div class="header-line" style="margin: 20px auto; transform-origin: center;"></div>
+
+                <p class="subtitle" style="margin: 30px auto; max-width: 700px; font-size: 1rem; opacity: 0.8;">
+                    This project is a tribute to the open-source spirit. We provide a clean, ad-free environment
+                    for developers to learn and share. By supporting the site, you ensure that we can
+                    continue to host these resources without commercial pressure.
+                </p>
+
+                <div style="margin-top: 40px; opacity: 0.2; font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase;">
+                    Est. 2026 — Built for the Community
+                </div>
+            </section>
+        </div>

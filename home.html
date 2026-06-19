@@ -1,0 +1,1400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="robots" content="index, follow" />
+    <title>Respect for Creators | High-End CSS3 Animations & Web UI Scripts</title>
+    <meta name="description" content="Premium collection of HTML5 and CSS3 animations, interactive UI components, and web scripts. Respect for Creators offers clean code for modern web design." />
+    <meta name="keywords" content="CSS3, HTML5, Web Design, UI Components, Button Animations, Web Scripts, Respect for Creators, RFC Templates" />
+    <meta name="author" content="Respect for Creators" />
+
+    <meta property="og:title" content="Respect for Creators | CSS3 Animations & Web UI Scripts" />
+    <meta property="og:description" content="Discover professional HTML5 and CSS3 templates. Elevate your web design with our unique animation scripts." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://respectforcreators.com" />
+    <meta property="og:image" content="https://respectforcreators.com/og-image.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Respect for Creators | CSS3 Animations" />
+    <meta name="twitter:description" content="Premium UI assets and animation scripts for modern creators." />
+    <meta name="twitter:image" content="https://respectforcreators.com/og-image.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="logo_rfc_svg_favicon.svg" />
+    <link rel="alternate icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/support-button.css" />
+    <link rel="stylesheet" href="css/colortool.css" />
+    <link rel="stylesheet" href="css/main-content.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/showcase.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/mobilenav-atmedia.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inter:wght@100;400&display=swap" rel="stylesheet" />
+
+
+    <script>
+        (function () {
+            const savedColor = localStorage.getItem('rfc-selected-color') || '#e1ff00';
+            
+            document.documentElement.style.setProperty('--neon', savedColor);
+
+            
+            document.addEventListener('DOMContentLoaded', () => {
+                document.documentElement.style.setProperty('--neon', savedColor);
+            });
+        })();
+
+
+
+    </script>
+
+</head>
+<body>
+
+ 
+    <header>
+        <div class="brand">
+            <a href="#" class="brand-link">
+                <div class="diamond-logo">
+                    <svg id="h-rfc-diamond-svg" viewBox="0 0 100 105" fill="none" xmlns="http://www.w3.org/2000/svg" overflow="visible">
+                        <g stroke="var(--neon)" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+                            <path d="M30 20 L70 20" />
+                            <path d="M30 20 L50 25 L70 20" />
+                            <path d="M30 20 L15 40" />
+                            <path d="M70 20 L85 40" />
+                            <path d="M30 20 L35 40" />
+                            <path d="M70 20 L65 40" />
+                            <path d="M50 25 L35 40" />
+                            <path d="M50 25 L65 40" />
+                            <path d="M50 25 L50 40" />
+                            <path d="M15 40 L35 40 L50 40 L65 40 L85 40" />
+                            <path d="M15 40 L50 95" />
+                            <path d="M85 40 L50 95" />
+                            <path d="M35 40 L50 95" />
+                            <path d="M65 40 L50 95" />
+                            <path d="M50 40 L50 95" />
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <div class="brand-name">
+                <div class="line-top">RESPECT FOR</div>
+                <div class="line-bottom">CREATORS</div>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#" id="nav-home" class="nav-item"><span>HOME</span><div class="liquid"></div></a>
+            <a href="#" id="nav-ui-loader" class="nav-item"><span>UI LOADER</span><div class="liquid"></div></a>
+            <a href="#" id="nav-ui-motion" class="nav-item"><span>UI MOTION</span><div class="liquid"></div></a>
+            <a href="#" id="nav-ui-button" class="nav-item"><span>UI BUTTON</span><div class="liquid"></div></a>
+            <a href="#" id="nav-submit" class="nav-item highlight"><span>SUBMIT</span><div class="liquid"></div></a>
+            <a href="#" id="nav-requests" class="nav-item highlight"><span>REQUESTS</span><div class="liquid"></div></a>
+
+        </nav>
+
+        <div class="mobile-menu-icon" id="menuIcon">
+            <svg viewBox="0 0 60 60">
+                <path d="M10 45 L10 15 L30 35 L50 15 L50 45" />
+            </svg>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#" id="nav-home-mob">HOME</a>
+        <a href="#" id="nav-ui-loader-mob">UI LOADER</a>
+        <a href="#" id="nav-ui-motion-mob">UI MOTION</a>
+        <a href="#" id="nav-ui-button-mob">UI BUTTON</a>
+        <a href="#" id="nav-submit-mob">SUBMIT</a>
+        <a href="#" id="nav-requests-mob">REQUESTS</a>
+
+        <div class="rfc-energy-rail">
+            <button class="rfc-energy-node rfc-yellow" onclick="rfcApplyColor('#e1ff00', this)" title="Neon Yellow"></button>
+            <button class="rfc-energy-node rfc-orange" onclick="rfcApplyColor('#fb951d', this)" title="Neon Orange"></button>
+            <button class="rfc-energy-node rfc-cyan" onclick="rfcApplyColor('#0fd6f3', this)" title="Neon Cyan"></button>
+            <button class="rfc-energy-node rfc-green" onclick="rfcApplyColor('#39ff14', this)" title="Neon Green"></button>
+            <button class="rfc-energy-node rfc-purple" onclick="rfcApplyColor('#f85ef3', this)" title="Neon Purple"></button>
+        </div>
+    </div>
+
+    <main>
+        <div id="mainContent"></div>
+        <div id="loader">
+            <div class="nexus-crystal">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-linear">
+            <a href="#" id="open-about-logo" class="rfc-brand-badge" title="About the Diamond Philosophy">
+                <svg viewBox="0 15 100 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 40 L50 95 L85 40 L70 20 L30 20 Z" />
+                        <path d="M15 40 L85 40" />
+                        <path d="M50 25 V95" />
+                        <path d="M30 20 L35 40 L50 25 L65 40 L70 20" />
+                        <path d="M35 40 L50 95" />
+                        <path d="M65 40 L50 95" />
+                        <path d="M30 20 L50 25 L70 20" />
+                    </g>
+                </svg>
+            </a>
+
+            <span class="copyright">© 2026 <span class="highlight">RESPECTFORCREATORS.COM</span></span>
+            <span class="footer-divider">/</span>
+            <a href="#" id="nav-imprint">IMPRINT</a>
+            <span class="footer-divider">/</span>
+            <a href="#" id="nav-license">LICENSE</a>
+            <span class="footer-divider">/</span>
+            <a href="#" id="nav-privacy">PRIVACY</a>
+            <span class="footer-divider">/</span>
+            <span class="rights">ALL RIGHTS RESERVED</span>
+            <span class="footer-divider">/</span>
+            <span class="version-tag">BUILD.V2-26</span>
+        </div>
+    </footer>
+
+    <div class="rfc-quantum-wrapper">
+        <div class="rfc-quantum-core">
+            <div class="rfc-quantum-pulse"></div>
+        </div>
+
+        <div class="rfc-energy-rail">
+            <button class="rfc-energy-node rfc-yellow" onclick="rfcApplyColor('#e1ff00', this)"></button>
+            <button class="rfc-energy-node rfc-orange" onclick="rfcApplyColor('#fb951d', this)"></button>
+            <button class="rfc-energy-node rfc-cyan" onclick="rfcApplyColor('#0fd6f3', this)"></button>
+            <button class="rfc-energy-node rfc-green" onclick="rfcApplyColor('#39ff14', this)"></button>
+            <button class="rfc-energy-node rfc-purple" onclick="rfcApplyColor('#f85ef3', this)"></button>
+        </div>
+    </div>
+
+
+    <a href="https://ko-fi.com/respectforcreators/tip" target="_blank" class="support-button diamond-energy" data-id="ID-7004" data-date="2026-02-06">
+        <div class="energy-wave"></div>
+        <div class="energy-wave delay"></div>
+
+        <div class="support-content">
+            <div class="support-outer-decoration">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <path id="kofiCircleTight" d="M 60, 60 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
+                    </defs>
+
+                    <circle cx="60" cy="60" r="48" class="energy-crown-svg" />
+
+                    <text font-family="'Inter', sans-serif" font-size="10.5" font-weight="900" letter-spacing="0.01em">
+                        <textPath xlink:href="#kofiCircleTight">
+                            SUPPORT THE MISSION • COFFEE BREAK •
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+
+            <span class="support-icon">
+                <svg viewBox="0 0 100 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g class="diamond-paths" stroke="var(--neon)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 40 L50 95 L85 40 L70 20 L30 20 Z" />
+                        <path d="M15 40 L85 40" />
+                        <path d="M50 25 V95" />
+                        <path d="M30 20 L35 40 L50 25 L65 40 L70 20" />
+                        <path d="M35 40 L50 95" />
+                        <path d="M65 40 L50 95" />
+                        <path d="M30 20 L50 25 L70 20" />
+                    </g>
+                </svg>
+            </span>
+        </div>
+    </a>
+
+    <script>
+
+        window.animateHeaderLogo = function (start) {
+            const headerLogo = document.querySelector('header .flower');
+            if (!headerLogo) return null;
+            const shapes = headerLogo.querySelectorAll('path, polygon');
+
+            if (start) {
+                let currentIndex = 0;
+                return setInterval(() => {
+                    shapes.forEach(s => s.style.setProperty('fill', 'rgba(255,255,255,0.1)', 'important'));
+                    if (shapes[currentIndex]) {
+                        shapes[currentIndex].style.setProperty('fill', 'var(--neon)', 'important'); // Dein Neon-Gelb
+                    }
+                    currentIndex = (currentIndex + 1) % shapes.length;
+                }, 80);
+            }
+            return null;
+        };
+
+        const menuIcon = document.getElementById("menuIcon");
+        const mobileNav = document.getElementById("mobileNav");
+        const container = document.getElementById("mainContent");
+        const loader = document.getElementById("loader");
+
+
+        if (menuIcon) {
+            menuIcon.addEventListener("click", () => { mobileNav.classList.toggle("open"); });
+        }
+
+
+
+       function updatePageTitle(file) {
+    let title = "Respect for Creators | High-End CSS3 Animations & Web UI Scripts";
+    let desc = "Premium collection of HTML5 and CSS3 animations, interactive UI components, and web scripts. Respect for Creators offers clean code for modern web design.";
+    let keywords = "CSS3, HTML5, Web Design, UI Components, Button Animations, Web Scripts, Respect for Creators, RFC Templates";
+
+    if (file.includes('main-info')) {
+        title = "CSS3 Animations & HTML5 Scripts | Respect for Creators";
+        desc = "Explore our core collection of unique HTML5 and CSS3 animations. Pure code crafted for maximum frontend performance.";
+    } else if (file.includes('ui-loader')) {
+        title = "Loading Animations & UI Loaders | Respect for Creators";
+        desc = "Discover high-quality, lightweight CSS and SVG loader animations. Elevate your website's UX with smooth loading transitions.";
+        keywords = "CSS loaders, SVG loaders, loading animations, UI spinners, frontend assets";
+    } else if (file.includes('about-logo')) {
+        title = "Our Story & Logo | Respect for Creators";
+        desc = "The philosophy behind Respect for Creators. Learn more about our custom SVG logo mechanics and our mission for developers.";
+    } else if (file.includes('ui-button')) {
+        title = "Modern Button Animations | Respect for Creators";
+        desc = "Premium CSS button hover effects and modern interaction designs. Clean, fully responsive snippets in neon, white, and gray.";
+        keywords = "CSS buttons, button animations, hover effects, neon yellow button, UI interactions";
+    } else if (file.includes('submit')) {
+        title = "Submit Your Work | Creator Community";
+        desc = "Are you a creator? Submit your own custom CSS animations or SVG designs and share your talent with the web developer community.";
+        keywords = "submit asset, share code, developer community, CSS creators";
+    } else if (file.includes('ui-motion')) {
+        title = "Motion Design & UI Scripts | Respect for Creators";
+        desc = "Advanced micro-interactions, smooth layout motions, and powerful UI scripts built with vanilla CSS and JavaScript.";
+        keywords = "motion design, web transitions, micro-interactions, layout motions, vanilla JS scripts";
+    } else if (file.includes('requests')) {
+        title = "Custom Requests & Support | Respect for Creators";
+        desc = "Missing a specific animation? Request custom UI assets or support our mission to keep high-quality code free and accessible.";
+    } else if (file.includes('imprint')) {
+        title = "Imprint | Respect for Creators";
+        desc = "Legal disclosure and contact information for Respect for Creators.";
+    } else if (file.includes('privacy')) {
+        title = "Privacy Policy | Respect for Creators";
+        desc = "Your data security matters. Read our comprehensive privacy policy regarding the use of our web asset platform.";
+    } else if (file.includes('license')) {
+        title = "License Details | Respect for Creators";
+        desc = "Transparent licensing terms for all our CSS and SVG assets. Keep creating with our free, developer-friendly terms.";
+    }
+
+    // 1. Standard-Titel setzen
+    document.title = title;
+
+    // 2. Meta Description aktualisieren
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.content = desc;
+
+    // 3. Meta Keywords aktualisieren
+    const metaKey = document.querySelector('meta[name="keywords"]');
+    if (metaKey) metaKey.content = keywords;
+
+    // 4. Open Graph Tags für Social Media aktualisieren
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.content = title;
+
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.content = desc;
+
+    // 5. Twitter-Tags aktualisieren
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.content = title;
+
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) twDesc.content = desc;
+}
+
+
+        function createIframeContent(html, css, js) {
+            const activeColor = localStorage.getItem('rfc-selected-color') || '#e1ff00';
+
+            const style = "<style>" +
+                ":root { --neon: " + activeColor + " !important; }" +
+                "body,html{margin:0;padding:0;height:100%;width:100%;background:transparent;overflow:hidden;color:white;}" +
+                css +
+                "</style>";
+
+            const receiver = "<script>" +
+                "window.rfcColorHandler = function(e) {" +
+                "  if(e.data && e.data.type === 'COLOR_UPDATE') {" +
+                "    document.documentElement.style.setProperty('--neon', e.data.color);" +
+                "  }" +
+                "};" +
+                "window.addEventListener('message', window.rfcColorHandler);" +
+                "<\/script>";
+
+            const script = "<script>try{(function(){" + (js || "") + "})();}catch(e){console.error('JS Error:',e)}<\/script>";
+
+            return "<!DOCTYPE html><html style='--neon: " + activeColor + "'><head>" + style + "</head><body>" + html + receiver + script + "</body></html>";
+        }
+
+    
+    
+    function loadContent(file) {
+    if (!container) return;
+
+    let baseId = "nav-home";
+    if (file.includes('ui-loader')) baseId = "nav-ui-loader";
+    else if (file.includes('ui-motion')) baseId = "nav-ui-motion";
+    else if (file.includes('ui-button')) baseId = "nav-ui-button";
+    else if (file.includes('submit')) baseId = "nav-submit";
+    else if (file.includes('requests')) baseId = "nav-requests";
+
+    document.querySelectorAll('.nav-item, .mobile-nav a').forEach(item => {
+        item.classList.remove('active');
+    });
+
+    const desktopItem = document.getElementById(baseId);
+    if (desktopItem) desktopItem.classList.add('active');
+
+    const mobileItem = document.getElementById(baseId + "-mob");
+    if (mobileItem) mobileItem.classList.add('active');
+
+    const mobileNavElement = document.getElementById('mobileNav');
+    if (mobileNavElement) {
+        mobileNavElement.classList.remove("open");
+    }
+
+    // ==========================================
+    // NEU: URL-PARAMETER SETZEN STATT HASHTAGS
+    // ==========================================
+    let paramName = "home";
+    if (file.includes('ui-loader')) paramName = "ui-loader";
+    else if (file.includes('ui-motion')) paramName = "ui-motion";
+    else if (file.includes('ui-button')) paramName = "ui-button";
+    else if (file.includes('submit')) paramName = "submit";
+    else if (file.includes('requests')) paramName = "requests";
+    else if (file.includes('about-logo')) paramName = "about-logo";
+    else if (file.includes('imprint')) paramName = "imprint";
+    else if (file.includes('license')) paramName = "license";
+    else if (file.includes('privacy')) paramName = "privacy";
+
+    const cleanPath = window.location.pathname;
+    const targetURL = `${cleanPath}?page=${paramName}`;
+
+    // Nur pushen, wenn sich der Parameter tatsächlich unterscheidet
+    if (window.location.search !== `?page=${paramName}`) {
+        history.pushState({ page: file }, "", targetURL);
+    }
+
+    const startTime = Date.now();
+    const minLoaderDuration = 1500;
+
+    container.classList.remove("visible");
+
+    setTimeout(() => {
+        loader.style.display = "flex";
+
+        setTimeout(() => {
+            loader.classList.add("show");
+            loader.classList.remove("loader-hide");
+        }, 10);
+
+        const cacheBuster = "t=" + Date.now();
+        const fileWithCacheBuster = file.includes("?")
+            ? `${file}&${cacheBuster}`
+            : `${file}?${cacheBuster}`;
+
+        fetch(fileWithCacheBuster)
+            .then(resp => {
+                if (!resp.ok) throw new Error("File not found: " + file);
+                return resp.text();
+            })
+            .then(data => {
+                container.innerHTML = data;
+
+                const mailSpan = container.querySelector('#contact-mail');
+                if (mailSpan) {
+                    const user = mailSpan.getAttribute('data-user');
+                    const domain = mailSpan.getAttribute('data-domain');
+                    if (user && domain) {
+                        mailSpan.textContent = user + '@' + domain;
+                    }
+                }
+
+                window.scrollTo(0, 0);
+
+                if (file.includes('main-info.html')) {
+                    updateLibraryStats();
+                }
+
+                if (typeof updatePageTitle === "function") {
+                    updatePageTitle(file);
+                }
+
+                setTimeout(() => {
+                    const dataStorage = container.querySelector('#animation-data');
+                    if (dataStorage) {
+                        renderAnimationCards(dataStorage);
+                    }
+                }, 10);
+
+                if (typeof initDemo === "function") {
+                    initDemo(container);
+                }
+
+                const elapsed = Date.now() - startTime;
+                const remainingTime = Math.max(0, minLoaderDuration - elapsed);
+
+                setTimeout(() => {
+                    loader.classList.remove("show");
+                    loader.classList.add("loader-hide");
+
+                    setTimeout(() => {
+                        loader.style.display = "none";
+                        container.classList.add("visible");
+                        const supportBtn = document.querySelector('.support-button.diamond-energy');
+                        if (supportBtn) {
+                            supportBtn.classList.add('reveal');
+                        }
+                    }, 200);
+                }, remainingTime);
+            })
+            .catch(err => {
+                console.error("Fetch Error:", err);
+                container.innerHTML = "<p style='color:white;text-align:center;padding:50px;'>Inhalt konnte nicht geladen werden.</p>";
+                loader.classList.remove("show");
+                loader.style.display = "none";
+                container.classList.add("visible");
+            });
+
+    }, 400);
+
+
+    if (typeof mobileNav !== 'undefined' && mobileNav) {
+        mobileNav.classList.remove("open");
+    }
+}
+
+
+
+
+
+        const RFC_SHOWCASE_ENGINE = "V1.2";
+
+        function renderAnimationCards(storage) {
+            console.log("DEBUG - Aktive Farbe gefunden:", localStorage.getItem('rfc-selected-color'));
+            const grid = document.getElementById('dynamic-grid');
+            if (!grid) return;
+
+
+            const activeColor = localStorage.getItem('rfc-selected-color') || '#e1ff00';
+
+
+            document.documentElement.style.setProperty('--neon', activeColor);
+
+
+            document.querySelectorAll('.rfc-dot').forEach(dot => {
+                dot.classList.remove('rfc-active');
+                if (dot.getAttribute('onclick') && dot.getAttribute('onclick').includes(activeColor)) {
+                    dot.classList.add('rfc-active');
+                }
+            });
+
+
+            grid.innerHTML = "";
+            const items = storage.querySelectorAll('.anim-item');
+
+            const cleanPower = (text) => {
+                if (!text) return "";
+                return text.split('\n')
+                    .map(line => line.trimStart())
+                    .join('\n')
+                    .trim();
+            };
+
+
+            items.forEach(item => {
+                const id = item.dataset.id;
+                const name = item.dataset.name;
+                const creator = item.dataset.creator || "Respect For Creators";
+                const creatorLink = item.dataset.link || "#";
+
+
+                const rawHTML = cleanPower(item.querySelector('.html-code').textContent);
+                const cssCode = cleanPower(item.querySelector('.css-code').textContent);
+                const jsTag = item.querySelector('.js-code');
+                const jsCode = jsTag ? cleanPower(jsTag.textContent) : "";
+
+                const escapedHTML = rawHTML.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                const escapedJS = jsCode.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+                const cardHTML = `
+                                <div class="anim-preview-card" data-anim-id="${id}">
+                                    <div class="showcase-header">
+
+                                        <div class="tab-group">
+                                            <button class="tab active" data-tab="${id}-prev">LIVE</button>
+                                            <button class="tab" data-tab="${id}-html">HTML</button>
+                                            <button class="tab" data-tab="${id}-css">CSS</button>
+                                            <button class="tab" data-tab="${id}-js">JS</button>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyWithThrottle('${id}')">COPY</button>
+                                    </div>
+                                    <div class="showcase-body">
+                                        <div id="${id}-prev" class="tab-content active no-padding">
+                                            <iframe id="iframe-${id}" class="preview-iframe" frameborder="0" scrolling="no"></iframe>
+                                        </div>
+
+                                        <button class="refresh-btn" onclick="refreshPreview('${id}')" title="Restart">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M23 4v6h-6"></path>
+                                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                                            </svg>
+                                        </button>
+                                        <span class="rfc-engine-body-tag">RFC-SHOWCASE-${RFC_SHOWCASE_ENGINE}</span>
+
+                                        <div id="${id}-html" class="tab-content code-view"><pre><code class="language-markup">${escapedHTML}</code></pre></div>
+                                        <div id="${id}-css" class="tab-content code-view"><pre><code class="language-css">${cssCode}</code></pre></div>
+                                        <div id="${id}-js" class="tab-content code-view"><pre><code class="language-javascript">${jsCode ? escapedJS : "// No Javascript"}</code></pre></div>
+                                    </div>
+                                       <div class="showcase-footer">
+                    <div class="footer-left">
+                        <span class="effect-name">${id}: ${name}</span>
+                        <a href="${creatorLink}" target="_blank" class="creator-link">
+                            <span class="creator-name">Created by ${creator}</span>
+                        </a>
+                    </div>
+                    <div class="footer-right">
+                        <span class="tracking-counter" id="count-${id}">...</span>
+                    </div>
+                </div>
+</div>`;
+
+                grid.insertAdjacentHTML('beforeend', cardHTML);
+
+
+                const iframe = document.getElementById(`iframe-${id}`);
+
+                if (iframe) {
+
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.border = 'none';
+                    iframe.style.display = 'block';
+                    iframe.style.background = 'transparent';
+
+
+                    iframe.srcdoc = createIframeContent(rawHTML, cssCode, jsCode);
+
+                }
+
+                const allTabs = grid.querySelectorAll('.tab');
+                allTabs.forEach(tab => {
+                    tab.addEventListener('click', function () {
+                        const card = this.closest('.anim-preview-card');
+                        const targetId = this.getAttribute('data-tab');
+
+
+                        card.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                        card.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+
+                        this.classList.add('active');
+                        const targetContent = card.querySelector(`#${targetId}`);
+                        if (targetContent) targetContent.classList.add('active');
+                    });
+                });
+
+
+                fetch(`admin/track.php?id=${id}&mode=get&t=${Date.now()}`)
+                    .then(r => r.json()).then(data => {
+                        const c = document.getElementById(`count-${id}`);
+                        if (c && data.success) c.innerText = data.count;
+                    }).catch(() => { });
+            });
+
+            if (window.Prism) { Prism.highlightAllUnder(grid); }
+        }
+
+        function copyWithThrottle(id) {
+            const card = document.querySelector(`[data-anim-id="${id}"]`);
+            let activeTabContent = card.querySelector('.tab-content.active');
+
+
+            if (activeTabContent.id.includes("-prev")) {
+                activeTabContent = card.querySelector(`#${id}-html`);
+            }
+
+            const textToCopy = activeTabContent.innerText;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                fetch(`admin/track.php?id=${id}&mode=inc`)
+                    .then(r => r.json())
+                    .then(data => {
+                        const c = document.getElementById(`count-${id}`);
+                        if (c && data.success) c.innerText = data.count;
+                    });
+
+                const btn = card.querySelector('.copy-btn');
+                const originalText = btn.innerText;
+                btn.innerText = "COPIED!";
+                setTimeout(() => { btn.innerText = originalText; }, 1500);
+            });
+        }
+
+        window.refreshPreview = function (id) {
+            const storage = document.getElementById('animation-data');
+            const item = storage ? storage.querySelector('.anim-item[data-id="' + id + '"]') : null;
+            if (item) {
+                const html = item.querySelector('.html-code').textContent.trim();
+                const css = item.querySelector('.css-code').textContent.trim();
+                const js = item.querySelector('.js-code') ? item.querySelector('.js-code').textContent.trim() : "";
+                const iframe = document.getElementById('iframe-' + id);
+                if (iframe) {
+
+                    iframe.srcdoc = createIframeContent(html, css, js);
+                }
+            }
+        };
+
+
+        function safeListen(id, file) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    loadContent(file);
+                });
+            }
+        }
+
+
+        safeListen("open-about-logo", "content/about-logo.html");
+        safeListen("nav-home", "content/main-info.html");
+        safeListen("nav-ui-motion", "content/ui-motion.html");
+        safeListen("nav-ui-loader", "content/ui-loader.html");
+        safeListen("nav-ui-button", "content/ui-button.html");
+        safeListen("nav-submit", "content/submit.html");
+        safeListen("nav-requests", "content/requests.html");
+        safeListen("nav-license", "content/license.html");
+        safeListen("nav-privacy", "content/privacy.html");
+        safeListen("nav-imprint", "content/imprint.html");
+
+        safeListen("nav-home-mob", "content/main-info.html");
+        safeListen("nav-ui-motion-mob", "content/ui-motion.html");
+        safeListen("nav-ui-loader-mob", "content/ui-loader.html");
+        safeListen("nav-ui-button-mob", "content/ui-button.html");
+        safeListen("nav-submit-mob", "content/submit.html");
+        safeListen("nav-requests-mob", "content/requests.html");
+        safeListen("nav-license-mob", "content/license.html");
+
+
+        const brand = document.querySelector('.brand-link');
+        if (brand) {
+            brand.addEventListener('click', e => {
+                e.preventDefault();
+                loadContent('content/main-info.html');
+            });
+        }
+
+
+        window.onload = () => {
+    animateHeaderDiamond();
+
+    const hash = window.location.hash.replace('#', '');
+    if (hash && hash !== 'home') {
+        let targetFile = 'content/main-info.html'; 
+
+        if (hash === 'loaders') targetFile = 'content/ui-loader.html'; 
+        else if (hash === 'motions') targetFile = 'content/ui-motion.html'; 
+        else if (hash === 'buttons') targetFile = 'content/ui-button.html'; 
+        else if (hash === 'submit') targetFile = 'content/submit.html'; 
+        else if (hash === 'requests') targetFile = 'content/requests.html'; 
+
+        loadContent(targetFile);
+    } else {
+        const params = new URLSearchParams(window.location.search);
+        const page = params.get("page");
+        switch (page) {
+            case "license": loadContent("content/license.html"); break;
+            case "about-logo": loadContent("content/about-logo.html"); break;
+            case "ui-loader": loadContent("content/ui-loader.html"); break;
+            case "ui-button": loadContent("content/ui-button.html"); break;
+            case "submit": loadContent("content/submit.html"); break;
+            case "ui-motion": loadContent("content/ui-motion.html"); break;
+            case "requests": loadContent("content/requests.html"); break;
+            case "privacy": loadContent("content/privacy.html"); break;
+            case "imprint": loadContent("content/imprint.html"); break;
+            default: loadContent("content/main-info.html");
+        }
+    }
+};
+
+        function initDemo(container) {
+            const allCards = container.querySelectorAll('.anim-preview-card');
+            allCards.forEach(card => {
+                const tabs = card.querySelectorAll('.tab');
+                tabs.forEach(btn => {
+                    btn.onclick = () => {
+                        card.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        card.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+                        const target = card.querySelector(`#${btn.dataset.tab}`);
+                        if (target) target.classList.add('active');
+                    };
+                });
+            });
+
+            const copyBtns = container.querySelectorAll('.copy-btn');
+            copyBtns.forEach(btn => {
+                btn.onclick = () => {
+                    const card = btn.closest('.anim-preview-card');
+                    const animId = card.dataset.animId;
+                    let activeContent = card.querySelector('.tab-content.active');
+                    if (activeContent.id.includes('prev')) { activeContent = card.querySelector('[id$="html"]'); }
+                    const codeToCopy = activeContent.innerText;
+                    if (navigator.clipboard && window.isSecureContext) {
+                        navigator.clipboard.writeText(codeToCopy);
+                    } else {
+                        const textArea = document.createElement("textarea");
+                        textArea.value = codeToCopy;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                    }
+                    const old = btn.textContent;
+                    btn.textContent = "COPIED";
+                    fetch(`admin/track.php?id=${animId}&mode=click&t=${Date.now()}`)
+                        .then(r => r.json())
+                        .then(data => {
+                            const counter = card.querySelector('.tracking-counter');
+                            if (counter && data.success) counter.innerText = data.count;
+                        }).catch(() => { });
+                    setTimeout(() => btn.textContent = old, 1200);
+                };
+            });
+        }
+
+
+
+
+
+        function animateHeaderDiamond() {
+            const frame = document.getElementById('header-frame');
+            const textBox = document.getElementById('h-rfc-box');
+            const diamondSvg = document.getElementById('h-rfc-diamond-svg');
+            const rfcText = document.getElementById('h-rfc-text');
+
+            if (!frame || !textBox) return;
+
+            const offset = 6;
+            textBox.style.width = `${frame.offsetWidth - (offset * 2)}px`;
+            textBox.style.left = `${offset}px`;
+            textBox.style.bottom = `${offset}px`;
+
+            setTimeout(() => frame.classList.add('visible'), 500);
+
+            const points = ["M15 40 L50 95 L85 40 L70 20 L30 20 Z", "M30 20 L70 20", "M15 40 L35 40 L65 40 L85 40", "M30 20 L15 40", "M70 20 L85 40", "M30 20 L35 40", "M70 20 L65 40", "M50 25 L35 40", "M50 25 L65 40", "M50 25 L50 40", "M30 20 L50 25 L70 20", "M15 40 L35 40 L50 95", "M85 40 L65 40 L50 95", "M35 40 L50 40 L65 40", "M50 40 L50 95"];
+
+            points.forEach((d, i) => {
+                const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                p.setAttribute("d", d);
+                p.setAttribute("stroke", "var(--neon)");
+                p.setAttribute("fill", "none");
+                p.setAttribute("stroke-width", "1.4");
+
+                p.classList.add('rfc-facet');
+                diamondSvg.appendChild(p);
+                const l = p.getTotalLength();
+                p.style.strokeDasharray = l;
+                p.style.strokeDashoffset = l;
+                p.animate([{ strokeDashoffset: l }, { strokeDashoffset: 0 }], { duration: 800, delay: 1000 + (i * 40), fill: 'forwards' });
+            });
+
+            setTimeout(() => {
+                const r1 = document.getElementById('h-rect1');
+                const r2 = document.getElementById('h-rect2');
+                [r1, r2].forEach((r, i) => {
+                    if (!r) return;
+                    const l = r.getTotalLength();
+                    r.style.strokeDasharray = l;
+                    r.style.strokeDashoffset = i === 0 ? l : -l;
+                    r.style.opacity = 1;
+                    r.animate([{ strokeDashoffset: i === 0 ? l : -l }, { strokeDashoffset: 0 }], { duration: 1500, fill: 'forwards' });
+                });
+            }, 1200);
+
+            setTimeout(() => {
+                textBox.style.opacity = "1";
+                setTimeout(() => {
+                    textBox.classList.add('active');
+                    if (rfcText) rfcText.style.color = "#000000";
+                }, 300);
+            }, 1800);
+
+            const animCorner = (id, delay) => {
+                const p = document.getElementById(id);
+                if (!p) return;
+                const l = p.getTotalLength();
+                p.style.strokeDasharray = l; p.style.strokeDashoffset = l; p.style.opacity = 1;
+                setTimeout(() => {
+                    p.animate([{ strokeDashoffset: l }, { strokeDashoffset: 0 }], { duration: 1000, fill: 'forwards' });
+                }, delay);
+            };
+            animCorner('h-path-tl', 2800);
+            animCorner('h-path-br', 2800);
+        }
+
+
+        window.animateHeaderLogo = function (start) {
+            const diamondSvg = document.getElementById('h-rfc-diamond-svg');
+            if (!diamondSvg) return null;
+
+
+            let shapes = Array.from(diamondSvg.querySelectorAll('path.rfc-facet'));
+
+            if (!start) {
+                shapes.forEach(s => {
+                    s.style.stroke = "var(--neon)";
+                    s.style.filter = "none";
+                    s.style.strokeWidth = "1.4";
+                    s.style.opacity = "1";
+                });
+                return null;
+            }
+
+            let currentIndex = 0;
+            return setInterval(() => {
+
+                if (shapes.length === 0) {
+                    shapes = Array.from(diamondSvg.querySelectorAll('path.rfc-facet'));
+                }
+
+                shapes.forEach((s, index) => {
+                    s.style.transition = "all 0.15s ease";
+                    s.style.stroke = "rgba(225, 255, 0, 0.1)";
+                    s.style.filter = "none";
+                });
+
+                if (shapes[currentIndex]) {
+                    shapes[currentIndex].style.stroke = "#e1ff00";
+                    shapes[currentIndex].style.filter = "drop-shadow(0 0 12px #e1ff00)";
+                    shapes[currentIndex].style.strokeWidth = "2.2";
+                }
+                currentIndex = (currentIndex + 1) % shapes.length;
+            }, 110);
+        };
+
+
+        window.handleRequestSubmit = function (event) {
+            if (event) event.preventDefault();
+            const form = event.target;
+            const btn = form.querySelector('button');
+            const diamondSvg = document.getElementById('h-rfc-diamond-svg');
+
+            btn.textContent = "SENDING...";
+            btn.disabled = true;
+
+
+            if (diamondSvg) diamondSvg.classList.add('is-sending-diamond');
+
+            const formData = new FormData(form);
+            const startTime = Date.now();
+
+            fetch('admin/send_request.php', { method: 'POST', body: formData })
+                .then(response => response.json())
+                .then(data => {
+                    const delay = Math.max(0, 2500 - (Date.now() - startTime));
+                    setTimeout(() => {
+
+                        if (diamondSvg) diamondSvg.classList.remove('is-sending-diamond');
+
+                        if (data.success) {
+                            btn.textContent = "SUCCESSFUL";
+                            btn.style.backgroundColor = "var(--neon)";
+                            btn.style.color = "#000";
+                            form.reset();
+
+
+                            diamondSvg.querySelectorAll('path').forEach(p => {
+                                p.style.strokeDashoffset = "0";
+                                p.style.stroke = "var(--neon)";
+                                p.style.filter = "drop-shadow(0 0 15px var(--neon))";
+                                p.style.opacity = "1";
+                            });
+                        } else {
+                            btn.textContent = "ERROR";
+                            btn.disabled = false;
+                        }
+                    }, delay);
+                })
+                .catch(() => {
+                    if (diamondSvg) diamondSvg.classList.remove('is-sending-diamond');
+                    btn.textContent = "FAILED";
+                    btn.disabled = false;
+                })
+                .finally(() => {
+                    setTimeout(() => {
+                        if (btn.textContent !== "SENDING...") {
+                            btn.textContent = "Send Briefing";
+                            btn.disabled = false;
+                            btn.style.backgroundColor = ""; btn.style.color = "";
+                        }
+                    }, 4000);
+                });
+            return false;
+        };
+
+        window.selectCategory = function (categoryText) {
+
+            const categoryInput = document.getElementById('req-category');
+
+            if (categoryInput) {
+
+                categoryInput.value = categoryText;
+
+
+                categoryInput.style.borderColor = "var(--neon)";
+                setTimeout(() => {
+                    categoryInput.style.borderColor = "rgba(255,255,255,0.2)";
+                }, 800);
+            }
+
+
+            document.querySelectorAll('.feature-box').forEach(box => {
+                const title = box.querySelector('h3');
+                if (title && title.innerText.trim() === categoryText) {
+                    box.classList.add('active-feature');
+                } else {
+                    box.classList.remove('active-feature');
+                }
+            });
+        };
+
+
+
+        window.handleSubmissionSubmit = function (event) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            const form = event.target;
+            const btn = form.querySelector('button');
+            const diamondSvg = document.getElementById('h-rfc-diamond-svg');
+
+
+            const emailInput = form.querySelector('input[name="creator_email"]');
+            if (emailInput && !emailInput.checkValidity()) {
+                emailInput.style.borderBottom = "2px solid #ff4444";
+                emailInput.focus();
+                return false;
+            }
+
+
+            const originalText = "Send for Review";
+            btn.textContent = "SENDING...";
+            btn.disabled = true;
+
+
+            if (diamondSvg) diamondSvg.classList.add('is-sending-diamond');
+
+            const startTime = Date.now();
+            const formData = new FormData(form);
+
+            fetch('admin/send_submit.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const duration = Date.now() - startTime;
+                    const delay = Math.max(0, 3000 - duration);
+
+                    setTimeout(() => {
+
+                        if (diamondSvg) diamondSvg.classList.remove('is-sending-diamond');
+
+                        if (data.success) {
+                            btn.textContent = "SUCCESSFUL";
+                            btn.style.backgroundColor = "var(--neon)";
+                            btn.style.color = "black";
+                            form.reset();
+
+
+                            if (diamondSvg) {
+                                diamondSvg.querySelectorAll('path').forEach(p => {
+                                    p.style.strokeDashoffset = "0";
+                                    p.style.stroke = "var(--neon)";
+                                    p.style.filter = "drop-shadow(0 0 15px var(--neon))";
+                                    p.style.opacity = "1";
+                                });
+                            }
+                        } else {
+                            btn.textContent = "ERROR";
+                            btn.disabled = false;
+                        }
+                    }, delay);
+                })
+                .catch(error => {
+                    if (diamondSvg) diamondSvg.classList.remove('is-sending-diamond');
+                    btn.textContent = "FAILED";
+                    btn.disabled = false;
+                })
+                .finally(() => {
+
+                    setTimeout(() => {
+                        if (btn.textContent !== "SENDING...") {
+                            btn.textContent = originalText;
+                            btn.disabled = false;
+                            btn.style.backgroundColor = "";
+                            btn.style.color = "";
+
+
+                            if (diamondSvg) {
+                                diamondSvg.querySelectorAll('path').forEach(p => {
+                                    p.style.filter = "";
+                                    p.style.stroke = "";
+                                });
+                            }
+                        }
+                    }, 4000);
+                });
+
+            return false;
+        };
+
+
+
+
+        function refreshPreview(id) {
+
+            const storage = document.getElementById('animation-data');
+            if (!storage) return;
+
+            const item = storage.querySelector(`.anim-item[data-id="${id}"]`);
+            if (!item) return;
+
+
+            const rawHTML = item.querySelector('.html-code').textContent.trim();
+            const jsCode = item.querySelector('.js-code') ? item.querySelector('.js-code').textContent.trim() : "";
+
+
+            const previewContainer = document.getElementById(`${id}-prev`);
+            if (previewContainer) {
+                previewContainer.innerHTML = rawHTML;
+
+
+                if (jsCode) {
+                    try {
+                        const s = document.createElement('script');
+                        s.textContent = `(function(){ ${jsCode} })();`;
+                        document.body.appendChild(s);
+
+                        setTimeout(() => s.remove(), 100);
+                    } catch (e) {
+                        console.error("Fehler beim Refresh-JS:", e);
+                    }
+                }
+            }
+        }
+
+        async function updateLibraryStats() {
+            const files = ['content/ui-motion.html', 'content/ui-button.html', 'content/ui-loader.html'];
+            const idMap = {
+                'content/ui-motion.html': 'count-ui-motion',
+                'content/ui-button.html': 'count-ui-button',
+                'content/ui-loader.html': 'count-ui-loader'
+            };
+
+            let total = 0;
+            let allCreators = new Set();
+            let allItems = [];
+
+            const formatValue = (num) => {
+                const str = num.toString().padStart(5, '0');
+                const firstNonZero = str.search(/[1-9]/);
+                if (firstNonZero === -1) return `<span class="digit-mute">00000</span>`;
+                return `<span class="digit-mute">${str.substring(0, firstNonZero)}</span><span class="digit-active">${str.substring(firstNonZero)}</span>`;
+            };
+
+            for (const file of files) {
+                try {
+                    const response = await fetch(file + "?t=" + Date.now());
+                    if (!response.ok) throw new Error("Fetch failed");
+
+                    const htmlText = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(htmlText, 'text/html');
+                    const items = Array.from(doc.querySelectorAll('.anim-item'));
+
+                    total += items.length;
+
+                    const targetId = idMap[file];
+                    if (document.getElementById(targetId)) {
+                        document.getElementById(targetId).innerHTML = formatValue(items.length);
+                    }
+
+                    items.forEach(el => {
+                        const creator = el.getAttribute('data-creator');
+                        if (creator) allCreators.add(creator.trim());
+
+                        allItems.push({
+                            id: el.getAttribute('data-id'),
+                            name: el.getAttribute('data-name'),
+                            date: el.getAttribute('data-date') || "0000-00-00",
+
+                            rawElement: el
+                        });
+                    });
+
+                } catch (e) {
+                    console.warn("Fehler bei " + file, e);
+                }
+            }
+
+
+            if (allItems.length > 0) {
+
+                allItems.sort((a, b) => b.date.localeCompare(a.date));
+                const latest = allItems[0];
+
+
+                const dashboardLabel = document.getElementById('latest-asset');
+                if (dashboardLabel) {
+                    dashboardLabel.textContent = latest.name;
+                    dashboardLabel.title = latest.name; // Tooltip bei langem Namen
+                }
+
+
+                const featuredIframe = document.getElementById('featured-iframe');
+                const featuredName = document.getElementById('featured-effect-name');
+                const featuredLink = document.getElementById('featured-masterpiece-link');
+
+                if (featuredIframe && latest.rawElement) {
+                    const el = latest.rawElement;
+                    const html = el.querySelector('.html-code').textContent;
+                    const css = el.querySelector('.css-code').textContent;
+                    const js = el.querySelector('.js-code') ? el.querySelector('.js-code').textContent : "";
+
+
+                    if (featuredName) {
+                        featuredName.textContent = `${latest.id} - ${latest.name}`;
+                    }
+
+
+                    let targetFile = "content/ui-button.html";
+                    let btnLabel = "EXPLORE ALL BUTTONS →";
+
+                    const idStr = String(latest.id);
+
+                    if (idStr.startsWith('ID-5') || idStr.startsWith('5')) {
+                        targetFile = "content/ui-loader.html";
+                        btnLabel = "EXPLORE ALL LOADERS →";
+                    } else if (idStr.startsWith('ID-8') || idStr.startsWith('8')) {
+                        targetFile = "content/ui-motion.html";
+                        btnLabel = "EXPLORE ALL MOTIONS →";
+                    } else if (idStr.startsWith('ID-7') || idStr.startsWith('7')) {
+                        targetFile = "content/ui-button.html";
+                        btnLabel = "EXPLORE ALL BUTTONS →";
+                    }
+
+                    if (featuredLink) {
+                        featuredLink.textContent = btnLabel;
+                        featuredLink.onclick = (e) => {
+                            e.preventDefault();
+                            if (typeof loadContent === "function") loadContent(targetFile);
+                        };
+                    }
+
+
+                    const previewFix = `<style>body, html { overflow: hidden !important; background: transparent !important; margin: 0; } .rfc-wrapper { height: 100vh !important; display: flex !important; justify-content: center !important; align-items: center !important; padding: 20px !important; } * { max-width: 100% !important; }</style>`;
+
+                    featuredIframe.srcdoc = createIframeContent(html, css + previewFix, js);
+                }
+            }
+
+            if (document.getElementById('count-total'))
+                document.getElementById('count-total').innerHTML = formatValue(total);
+            if (document.getElementById('count-creators'))
+                document.getElementById('count-creators').innerHTML = formatValue(allCreators.size);
+        }
+
+
+        function rfcApplyColor(colorValue, element) {
+
+            document.body.classList.add('rfc-color-changing');
+
+            requestAnimationFrame(() => {
+
+                document.documentElement.style.setProperty('--neon', colorValue);
+                localStorage.setItem('rfc-selected-color', colorValue);
+
+
+                document.querySelectorAll('.rfc-energy-node').forEach(node => node.classList.remove('rfc-active'));
+
+
+                const matchingNodes = document.querySelectorAll(`.rfc-energy-node[onclick*="${colorValue}"]`);
+                matchingNodes.forEach(node => node.classList.add('rfc-active'));
+
+
+                const iframes = document.querySelectorAll('iframe');
+                iframes.forEach(iframe => {
+                    try {
+
+                        if (iframe.contentWindow) {
+                            iframe.contentWindow.postMessage({ type: 'COLOR_UPDATE', color: colorValue }, '*');
+                        }
+
+
+                        if (iframe.contentDocument && iframe.contentDocument.documentElement) {
+
+                            iframe.contentDocument.documentElement.style.setProperty('--neon', colorValue, 'important');
+
+
+                            let override = iframe.contentDocument.getElementById('rfc-live-fix');
+                            if (!override) {
+                                override = iframe.contentDocument.createElement('style');
+                                override.id = 'rfc-live-fix';
+                                iframe.contentDocument.head.appendChild(override);
+                            }
+                            override.textContent = ":root { --neon: " + colorValue + " !important; }";
+                        }
+                    } catch (e) {
+
+                    }
+                });
+            });
+
+
+            setTimeout(() => document.body.classList.remove('rfc-color-changing'), 900);
+        }
+
+
+        
+       document.addEventListener("DOMContentLoaded", () => {
+    // 1. Gespeicherte Farbe auslesen und direkt anwenden
+    const savedColor = localStorage.getItem('rfc-selected-color');
+    if (savedColor) {
+        rfcApplyColor(savedColor, null);
+    }
+
+    // 2. Diamant-Animation und Hover-Effekte steuern
+    const diamond = document.querySelector("#h-rfc-diamond-svg");
+    const brandLink = document.querySelector(".brand-link");
+
+    const finalizeDiamond = () => {
+        if (diamond) {
+            diamond.classList.add("is-finished");
+            diamond.style.setProperty('--dash-offset', '0');
+        }
+    };
+
+    // Diamant nach 5 Sekunden finalisieren
+    setTimeout(finalizeDiamond, 5000);
+
+    // Hover-Events nur binden, wenn beide Elemente existieren
+    if (brandLink && diamond) {
+        brandLink.addEventListener("mouseenter", () => {
+            finalizeDiamond();
+            diamond.classList.add("rfc-hover-active");
+        });
+
+        brandLink.addEventListener("mouseleave", () => {
+            diamond.classList.remove("rfc-hover-active");
+        });
+    }
+
+    // ==========================================
+    // 3. SEO-UMSTELLUNG: ?page= STATT HASHTAGS
+    // ==========================================
+
+    // Zuordnung: Welche ID lädt welche HTML-Datei und welchen URL-Parameter
+    const pageMapping = {
+        'nav-home': { file: 'content/dashboard.html', param: 'home' },
+        'nav-ui-loader': { file: 'content/ui-loader.html', param: 'ui-loader' },
+        'nav-ui-motion': { file: 'content/ui-motion.html', param: 'ui-motion' },
+        'nav-ui-button': { file: 'content/ui-button.html', param: 'ui-button' },
+        'nav-submit': { file: 'content/submit.html', param: 'submit' },
+        'nav-requests': { file: 'content/requests.html', param: 'requests' },
+        'nav-about-logo': { file: 'content/about-logo.html', param: 'about-logo' },
+        'nav-imprint': { file: 'content/imprint.html', param: 'imprint' },
+        'nav-license': { file: 'content/license.html', param: 'license' },
+        'nav-privacy': { file: 'content/privacy.html', param: 'privacy' },
+
+        // Mobile Menüpunkte spiegeln dieselbe Logik
+        'nav-home-mob': { file: 'content/dashboard.html', param: 'home' },
+        'nav-ui-loader-mob': { file: 'content/ui-loader.html', param: 'ui-loader' },
+        'nav-ui-motion-mob': { file: 'content/ui-motion.html', param: 'ui-motion' },
+        'nav-ui-button-mob': { file: 'content/ui-button.html', param: 'ui-button' },
+        'nav-submit-mob': { file: 'content/submit.html', param: 'submit' },
+        'nav-requests-mob': { file: 'content/requests.html', param: 'requests' },
+        'nav-about-logo-mob': { file: 'content/about-logo.html', param: 'about-logo' },
+        'nav-imprint-mob': { file: 'content/imprint.html', param: 'imprint' },
+        'nav-license-mob': { file: 'content/license.html', param: 'license' },
+        'nav-privacy-mob': { file: 'content/privacy.html', param: 'privacy' }
+    };
+
+    // Klick-Events an alle Navigationselemente binden
+    Object.keys(pageMapping).forEach(id => {
+        const navElement = document.getElementById(id);
+        if (navElement) {
+            navElement.addEventListener('click', (e) => {
+                e.preventDefault(); // Verhindert das Springen wegen href="#"
+                
+                const target = pageMapping[id];
+                
+                // Schreibt die URL sauber um zu: deineseite.de/?page=parameter (Ohne Seiten-Reload!)
+                history.pushState({ page: target.file }, "", `?page=${target.param}`);
+                
+                // Lädt deinen Inhalt über deine bestehende Funktion
+                if (typeof loadContent === "function") {
+                    loadContent(target.file);
+                }
+            });
+        }
+    });
+
+    // URL beim ersten Laden der Seite prüfen (Direktaufruf oder Google-Index)
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageParam = urlParams.get('page');
+
+    if (pageParam) {
+        // Sucht die passende Datei anhand des Parameters aus unserem Mapping
+        const foundKey = Object.keys(pageMapping).find(key => pageMapping[key].param === pageParam);
+        if (foundKey && typeof loadContent === "function") {
+            loadContent(pageMapping[foundKey].file);
+        }
+    } else {
+        // Standardseite laden, wenn kein Parameter in der URL steht (z.B. Home)
+        if (typeof loadContent === "function") {
+            loadContent('content/dashboard.html'); 
+        }
+    }
+
+    // Den "Zurück"-Button des Browsers abfangen, damit die Seite mitslingt
+    window.addEventListener('popstate', () => {
+        const currentParams = new URLSearchParams(window.location.search);
+        const currentParam = currentParams.get('page');
+        
+        if (currentParam) {
+            const foundKey = Object.keys(pageMapping).find(key => pageMapping[key].param === currentParam);
+            if (foundKey && typeof loadContent === "function") {
+                loadContent(pageMapping[foundKey].file);
+            }
+        } else {
+            if (typeof loadContent === "function") {
+                loadContent('content/dashboard.html');
+            }
+        }
+    });
+});
+    </script>
+</body>
+</html>

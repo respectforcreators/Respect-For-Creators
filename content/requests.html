@@ -1,0 +1,65 @@
+﻿<div id="request-page" class="main-info">
+    <div class="rfc-page-header">
+        <div class="header-context">
+            <span class="breadcrumb">Interaction</span>
+            <span class="separator">/</span>
+            <span class="current-category">Feedback & Briefing</span>
+        </div>
+
+        <h1 class="header-title">
+            Feature <span class="neon-text">Requests</span>
+        </h1>
+
+        <div class="header-line"></div>
+
+        <p class="subtitle">
+            Tell me about your vision or help improve the gallery. Your input shapes
+            the future of the RFC ecosystem. Choose a path below.
+        </p>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-box" onclick="selectCategory('Vision & Concept')">
+            <h3>Vision & Concept</h3>
+            <p>Have a unique idea for a high-end effect? Let's bring your vision to life and expand the portfolio.</p>
+        </div>
+        <div class="feature-box" onclick="selectCategory('Connect & Refine')">
+            <h3>Connect & Refine</h3>
+            <p>Share your honest opinion, ask technical questions, or discuss ways to improve the RFC ecosystem.</p>
+        </div>
+        <div class="feature-box" onclick="selectCategory('Quality Control')">
+            <h3>Quality Control</h3>
+            <p>Notice a glitch or a cross-browser issue? Help me maintain the highest code standards.</p>
+        </div>
+    </div>
+
+    <div class="feature-box highlight" style="transform: none; margin-top: 30px; text-align: left;">
+        <form id="requestForm" onsubmit="handleRequestSubmit(event)">
+
+            <input type="text" name="extra_check" style="display:none !important" tabindex="-1" autocomplete="off">
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">CATEGORY</label>
+                    <input type="text" id="req-category" name="category" placeholder="Select above or type here..." required
+                           style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); color: white; padding: 10px 0; font-family: var(--font-main); outline: none; transition: border-color 0.3s;">
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">YOUR EMAIL</label>
+                    <input type="email" name="email" placeholder="contact@example.com" required
+                           style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); color: white; padding: 10px 0; font-family: var(--font-main); outline: none;">
+                </div>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <label style="display:block; font-size: 0.75rem; color: var(--neon); margin-bottom: 8px;">MESSAGE</label>
+                <textarea name="message" rows="5" placeholder="Describe your project or ask a question..." required
+                          style="width: 100%; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: white; padding: 15px; font-family: var(--font-main); outline: none; resize: vertical;"></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end;">
+                <button type="submit" class="send-button" style="position: static; ">SEND MESSAGE</button>
+            </div>
+        </form>
+    </div>
+</div>

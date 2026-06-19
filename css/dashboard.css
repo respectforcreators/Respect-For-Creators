@@ -1,0 +1,117 @@
+﻿.feature-box stat-dashboard:hover {
+    transform: translateY(-4px);
+    border-color: var(--neon);
+    box-shadow: 0 0 12px rgba(191,233,255,0.15);
+}
+
+.stat-dashboard {
+    background: #000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .stat-dashboard h3 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+.stat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+.stat-label {
+    color: #888;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+.stat-value {
+    color: var(--neon);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.status-pulse {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background-color: var(--neon);
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0 0 10px var(--neon);
+}
+
+    .status-pulse::before,
+    .status-pulse::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--neon);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
+        animation: rfc-radar 2s infinite linear;
+    }
+
+    .status-pulse::after {
+        animation-delay: 1s; 
+    }
+
+@keyframes rfc-radar {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+}
+
+.digit-mute {
+    color: rgba(255, 255, 255, 0.4); 
+    letter-spacing: 2px;
+}
+
+.digit-active {
+    color: var(--neon); 
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(225, 255, 0, 0.3);
+}
+
+
+.stat-value {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 1.1rem !important;
+}
+
+#latest-asset {
+    display: inline-block;
+    max-width: 165px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    vertical-align: bottom; 
+    color: #fff;
+    font-size: 0.85rem !important;
+}

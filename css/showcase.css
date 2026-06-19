@@ -1,0 +1,357 @@
+﻿.animations-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 10px 40px 20px;
+}
+
+.grid-layout-triple {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.anim-preview-card {
+    background: #1a242d;
+    border: 1px solid #555555; 
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.showcase-header {
+    padding: 10px 15px;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555555; 
+    position: relative;
+}
+
+.tab {
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative; 
+    transition: color 0.8s ease;
+}
+
+    
+    .tab::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+
+    
+    .tab:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    
+    .tab.active {
+        color: var(--neon);
+    }
+
+        .tab.active::after {
+            transform: scaleX(1);
+            background-color: var(--neon);
+        }
+
+.copy-btn {
+    
+    background: transparent;
+    color: var(--neon);
+    padding: 6px 14px;
+    border: 1px solid color-mix(in srgb, var(--neon) 30%, transparent); 
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: 0.75rem;
+    font-weight: 500; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+    
+    .copy-btn::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--neon);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    
+    .copy-btn:hover {
+        color: #fff;
+        background: rgba(245, 242, 6, 0.05); 
+        border-color: var(--neon);
+        padding-left: 20px; 
+        padding-right: 8px;
+    }
+
+        .copy-btn:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+   
+    .copy-btn::before {
+        content: '→';
+        position: absolute;
+        left: -10px;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    .copy-btn:hover::before {
+        left: 6px;
+        opacity: 1;
+    }
+
+
+.preview-content iframe,
+.anim-item iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 300px; 
+    border: none !important;
+    display: block !important;
+    background: transparent !important;
+}
+
+.showcase-body {
+    height: 250px;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tab-content[id$="-html"] pre,
+.tab-content[id$="-css"] pre,
+.tab-content[id$="-js"] pre { 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.tab-content.active[id$="-html"],
+.tab-content.active[id$="-css"],
+.tab-content.active[id$="-js"] { 
+    display: block !important;
+    text-align: left !important;
+}
+
+
+.tab-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+    
+    .tab-content.no-padding {
+        padding: 0 !important;
+    }
+
+
+.preview-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+
+.tab-content.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+pre {
+    color: var(--text); 
+    font-size: 0.8rem;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left !important;
+    display: block !important;
+    width: 100%;
+}
+
+
+.showcase-footer {
+    padding: 12px 15px;
+    border-top: 1px solid #555555;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.75rem; 
+    color: var(--neon);
+    background: var(--bg);
+    text-transform: uppercase;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; 
+}
+
+.effect-name {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--neon);
+    font-weight: 500;
+    line-height: 1;
+    
+}
+
+
+.creator-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+    .creator-link:hover .creator-name {
+        opacity: 1;
+        color: var(--text); 
+    }
+
+
+.creator-name::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+.creator-link:hover .creator-name::after {
+    width: 100%;
+}
+
+.creator-link:active {
+    transform: translateY(1px);
+}
+
+.creator-name {
+    font-size: 0.8rem;
+    text-transform: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tracking-counter {
+    color: var(--text);
+    font-weight: bold;
+}
+
+
+.tab-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+    background: #2f3d48;
+    border-radius: 10px;
+}
+
+.refresh-btn {
+    position: absolute;
+    top: 15px; 
+    right: 15px; 
+    z-index: 100;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.8s ease;
+}
+
+
+.anim-preview-card:hover .tab-content.active[id$="-prev"] ~ .refresh-btn {
+    display: flex;
+}
+
+
+.refresh-btn:hover {
+    color: var(--neon);
+    
+}
+
+    
+    .refresh-btn:hover svg {
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+    }
+
+.refresh-btn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+
+.rfc-engine-body-tag {
+    position: absolute;
+    bottom: -8px; 
+    right: 7px; 
+    z-index: 100;
+    background: var(--bg);
+    border: 0px solid #2f3d48;
+    color: #bbbbbb;
+    font-size: 0.55rem;
+    padding: 2px 4px;
+    font-family: sans-serif;
+}

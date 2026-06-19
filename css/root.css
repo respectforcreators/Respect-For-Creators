@@ -1,0 +1,63 @@
+﻿:root {
+    --bg: #0d1117;
+    --neon: #e1ff00; 
+    --text: #e0e0e0; 
+    --weiss: #ffffff; 
+    --font-main: sans-serif;
+    --font-heading: 'Cormorant Garamond', serif;
+    --stroke-width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg);
+    font-family: var(--font-main);
+    color: var(--text);
+    font-weight: 200;
+    overflow-x: hidden;
+    position: relative;
+}
+
+    
+    /*body::before {
+        content: "";
+        position: fixed;
+        top: 50%; 
+        left: 50%;
+        width: 180vw;
+        height: 180vw;
+        transform: translate(-50%, -50%) rotate(-22deg);
+        background-image: url('logo_rfc_svg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.3;
+        z-index: -1;
+        pointer-events: none;
+    }*/
+
+
+.code-view pre,
+.code-view code {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+}
+
+#mainContent, section {
+    position: relative;
+    z-index: 1;
+}

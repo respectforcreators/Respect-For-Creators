@@ -1,0 +1,282 @@
+﻿.mobile-menu-icon {
+    display: none; 
+}
+
+@media screen and (max-width: 1420px) {
+
+    
+    header {
+        height: 90px !important;
+        padding: 0 20px 0 0 !important;
+    }
+
+    
+    .brand {
+            
+        margin-left: 4px;
+        padding: 5px 0;
+    }
+
+    .diamond-logo {
+        width: 80px;
+        margin-right: 3px;
+        transform: translateY(-3.2px);
+    }
+
+   
+    .brand-name {
+        margin-left: -2px !important; 
+        padding-left: 15px !important;
+        border-left: 3px solid var(--neon) !important;
+        transform: scale(0.75) !important;
+        transform-origin: left center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+
+    nav {
+        gap: 10px !important;
+    }
+
+    .nav-item {
+        padding: 8px 14px !important;
+        font-size: 0.85rem !important;
+    }
+
+
+    /*.rfc-dot {
+        width: 9px; 
+        height: 9px;
+    }
+
+        .rfc-dot.rfc-active {
+            outline: 1px solid #ffffff; 
+            outline-offset: 3px; 
+        }
+
+    .rfc-color-ampel {
+        margin-right: -35px;
+        padding-left: 5px;
+    }*/
+}
+
+/*@media (min-width: 1091px) {
+    .main-info {
+        margin-top: -170px !important;
+    }
+}*/
+
+@media (max-width: 1090px) {
+    
+    .main-info {
+        margin-top: 0 !important; /* Setzt den Desktop-Hack zurück */
+        padding-top: 45px !important; /* Sorgt für Abstand unter dem mobilen Header */
+    }
+    
+    header {
+        height: 75px !important;
+        padding: 0 10px 0 0 !important;
+    }
+
+    .rfc-quantum-wrapper {
+        display: none !important;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    nav, .nav-item {
+        display: none !important;
+    }
+
+    
+    .mobile-menu-icon {
+        display: flex !important;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin-left: auto !important;
+    }
+
+        .mobile-menu-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: var(--neon);
+            stroke-width: 6;
+            fill: none;
+            stroke-linecap: round;
+            filter: drop-shadow(0 0 4px var(--neon));
+            animation: drawM 2.6s ease forwards;
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            transition: all 0.3s ease;
+        }
+
+    @keyframes drawM {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    
+    .mobile-nav {
+        position: fixed;
+        top: 78px;
+        right: -100%;
+        width: 70%;
+        height: calc(100% - 78px);
+        background: rgba(18, 26, 34, 0.97);
+        backdrop-filter: blur(6px);
+        box-shadow: -4px 0 12px rgba(0, 0, 0, 0.25);
+        transition: right 0.45s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        padding: 50px 40px !important;
+        gap: 22px;
+        z-index: 99999;
+    }
+
+        .mobile-nav.open {
+            right: 0;
+        }
+
+        .mobile-nav a {
+            font-family: var(--font-main);
+            font-weight: 100;
+            color: var(--text);
+            font-size: 1.1rem;
+            letter-spacing: 0.3em;
+            text-decoration: none;
+            text-transform: none;
+            width: 100%;
+            border-bottom: 1px solid color-mix(in srgb, var(--neon) 30%, transparent);
+            padding-bottom: 12px;
+        }
+
+            .mobile-nav a.active {
+                color: var(--neon) !important;
+                border-bottom: 1px solid var(--neon);
+                padding-left: 10px;
+                transition: all 0.8s ease;
+            }
+
+        
+        .mobile-nav .rfc-energy-rail {
+            all: unset !important;
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+            gap: 30px !important;
+            margin-top: 25px !important;
+            width: auto !important;
+        }
+
+        .mobile-nav .rfc-energy-node {
+            all: unset !important;
+            display: block !important;
+            width: 18px !important;
+            height: 18px !important;
+            border-radius: 50% !important;
+            cursor: pointer !important;
+            flex-shrink: 0 !important;
+            transition: transform 0.3s ease !important;
+            position: relative !important;
+        }
+
+            
+            .mobile-nav .rfc-energy-node::after,
+            .mobile-nav .rfc-energy-node::before {
+                content: none !important;
+                display: none !important;
+            }
+
+        .mobile-nav .rfc-yellow {
+            background-color: #e1ff00 !important;
+        }
+
+        .mobile-nav .rfc-orange {
+            background-color: #fb951d !important;
+        }
+
+        .mobile-nav .rfc-cyan {
+            background-color: #0fd6f3 !important;
+        }
+
+        .mobile-nav .rfc-green {
+            background-color: #39ff14 !important;
+        }
+
+        .mobile-nav .rfc-purple {
+            background-color: #f85ef3 !important;
+        }
+
+        
+        .mobile-nav .rfc-energy-node.rfc-active {
+            outline: 1.5px solid #ffffff !important;
+            outline-offset: 4px !important;
+            transform: scale(1.1) !important;
+        }
+
+    
+    .brand {
+        margin-left: 2px;
+        padding: 3px 0;
+    }
+
+    .brand-name {
+        transform: scale(0.65) !important;
+    }
+
+    .diamond-logo {
+        width: 67px;
+        margin-right: 3px;
+        transform: translateY(-3.2px);
+    }
+
+    
+    .footer-linear {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        text-align: center;
+    }
+
+    .support-button.diamond-energy {
+        width: 65px !important;
+        height: 65px !important;
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .showcase-highlight {
+        transform: scale(1.02);
+        z-index: 2;
+    }
+}
+
+
+/* Mobile Fix: Abstände und Stack-Layout 
+@media (max-width: 768px) {
+    .masterpiece-row {
+        margin-bottom: 20px; 
+    }
+
+    .feature-grid {
+        gap: 20px !important; 
+    }
+
+    .showcase-footer {
+        flex-direction: column; 
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+
+    .footer-right {
+        width: 100%;
+        text-align: left;
+    }
+}*/
