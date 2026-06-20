@@ -30,25 +30,7 @@ body {
     position: relative;
 }
 
-    
-    /*body::before {
-        content: "";
-        position: fixed;
-        top: 50%; 
-        left: 50%;
-        width: 180vw;
-        height: 180vw;
-        transform: translate(-50%, -50%) rotate(-22deg);
-        background-image: url('logo_rfc_svg.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        opacity: 0.3;
-        z-index: -1;
-        pointer-events: none;
-    }*/
-
-
+  
 .code-view pre,
 .code-view code {
     white-space: pre-wrap !important;
