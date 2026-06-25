@@ -350,12 +350,6 @@ nav {
     animation: drawDiamond 5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-@keyframes drawDiamond {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
 
 #h-rfc-diamond-svg.rfc-hover-active {
     transform: scale(1) rotateX(10deg); 

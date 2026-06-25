@@ -63,3 +63,11 @@ footer a {
     transition: all 0.3s ease;
     background: var(--neon) !important;
 }
+
+.footer-text-group {
+    display: inline-flex;
+    align-items: center;
+    gap: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+}

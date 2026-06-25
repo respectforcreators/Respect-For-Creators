@@ -462,44 +462,52 @@
     </div>
     <!-- ********************************************************************************************************************************************* -->
     <div class="anim-item"
-         data-id="ID-7090"
-         data-date="2026-02-11 21:12"
-         data-name="Deconstructed Blade"
-         data-keywords="button, blade, slice, kinetic, neon yellow, sharp"
-         data-creator="respectforcreators.com"
-         data-link="https://www.respectforcreators.com">
+     data-id="ID-7090"
+     data-date="2026-02-11 21:12"
+     data-name="Deconstructed Blade"
+     data-keywords="button, blade, slice, kinetic, neon yellow, sharp"
+     data-creator="respectforcreators.com"
+     data-link="https://www.respectforcreators.com">
 
-        <script class="html-code" type="text/plain">
-            <div class="rfc-wrapper">
-                <button class="rfc-btn-blade">
-                    <span class="rfc-btn-text">HOVER ME</span>
-                    <div class="rfc-blade-part"></div>
-                </button>
-            </div>
-        </script>
+    <script class="html-code" type="text/plain">
+        <div class="rfc-wrapper">
+            <button class="rfc-btn-blade">
+                <span class="rfc-btn-text">HOVER ME</span>
+                <div class="rfc-blade-part"></div>
+            </button>
+        </div>
+    </script>
 
-        <script class="css-code" type="text/plain">
-            /* License: Free | Source: respectforcreators.com | Support: ko-fi.com/respectforcreators */
+    <script class="css-code" type="text/plain">
+        :root { --neon: #e1ff00; }
 
-            :root { --neon: #e1ff00; }
+        .rfc-wrapper { display: flex; justify-content: center; align-items: center; height: 100vh; }
 
-            .rfc-wrapper { display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .rfc-btn-blade {
+            position: relative; 
+            padding: 25px 70px; 
+            background: #000; 
+            border: none;
+            color: #fff; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 900; 
+            cursor: pointer;
+            box-sizing: border-box;
+            transition: letter-spacing 0.5s cubic-bezier(0.19, 1, 0.22, 1), 
+                        padding 0.5s cubic-bezier(0.19, 1, 0.22, 1), 
+                        color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
 
-            .rfc-btn-blade {
-                position: relative; padding: 25px 70px; background: #000; border: none;
-                color: #fff; font-family: 'Inter', sans-serif; font-weight: 900; cursor: pointer;
-            }
+        .rfc-blade-part {
+            position: absolute; inset: 0; border: 2px solid var(--neon);
+            clip-path: polygon(0 0, 5% 0, 5% 100%, 0 100%);
+            transition: clip-path 0.5s cubic-bezier(0.19, 1, 0.22, 1), background 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
 
-            .rfc-blade-part {
-                position: absolute; inset: 0; border: 2px solid var(--neon);
-                clip-path: polygon(0 0, 5% 0, 5% 100%, 0 100%);
-                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-            }
-
-            .rfc-btn-blade:hover .rfc-blade-part { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); background: rgba(225,255,0,0.1); }
-            .rfc-btn-blade:hover { letter-spacing: 15px; color: var(--neon); }
-        </script>
-    </div>
+        .rfc-btn-blade:hover .rfc-blade-part { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); background: rgba(225, 255, 0, 0.1); }
+        .rfc-btn-blade:hover { letter-spacing: 15px; padding: 25px 17px 25px 32px; color: var(--neon); }
+    </script>
+</div>
     <!-- ********************************************************************************************************************************************* -->
     <div class="anim-item"
          data-id="ID-7089"
@@ -599,51 +607,57 @@
     </div>
     <!-- ********************************************************************************************************************************************* -->
     <div class="anim-item"
-         data-id="ID-7087"
-         data-date="2026-02-11 20:50"
-         data-name="Kinetic Parallax Slicer"
-         data-keywords="button, parallax, slicer, geometry, neon yellow, technical"
-         data-creator="respectforcreators.com"
-         data-link="https://www.respectforcreators.com">
+     data-id="ID-7087"
+     data-date="2026-02-11 20:50"
+     data-name="Kinetic Parallax Slicer"
+     data-keywords="button, parallax, slicer, geometry, neon yellow, technical"
+     data-creator="respectforcreators.com"
+     data-link="https://www.respectforcreators.com">
 
-        <script class="html-code" type="text/plain">
-            <div class="rfc-wrapper">
-                <button class="rfc-btn-slicer">
-                    <div class="rfc-slice-bg"></div>
-                    <span class="rfc-btn-text" data-text="HOVER ME">HOVER ME</span>
-                </button>
-            </div>
-        </script>
+    <script class="html-code" type="text/plain">
+        <div class="rfc-wrapper">
+            <button class="rfc-btn-slicer">
+                <div class="rfc-slice-bg"></div>
+                <span class="rfc-btn-text" data-text="HOVER ME">HOVER ME</span>
+            </button>
+        </div>
+    </script>
 
-        <script class="css-code" type="text/plain">
-            /* License: Free | Source: respectforcreators.com | Support: ko-fi.com/respectforcreators */
+    <script class="css-code" type="text/plain">
+        :root { --neon: #e1ff00; }
 
-            :root { --neon: #e1ff00; }
+        .rfc-wrapper { display: flex; justify-content: center; align-items: center; height: 100vh; }
 
-            .rfc-wrapper { display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .rfc-btn-slicer {
+            position: relative; padding: 25px 70px; background: #000; border: 1px solid #e0e0e0;
+            color: #fff; font-family: 'Inter', sans-serif; font-weight: 900; cursor: pointer; overflow: hidden;
+            transition: letter-spacing 0.6s cubic-bezier(0.19, 1, 0.22, 1), border-color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        }
 
-            .rfc-btn-slicer {
-                position: relative; padding: 25px 70px; background: #000; border: 1px solid #e0e0e0;
-                color: #fff; font-family: 'Inter', sans-serif; font-weight: 900; cursor: pointer; overflow: hidden;
-            }
+        .rfc-slice-bg {
+            position: absolute; inset: 0; background: var(--neon);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            transition: clip-path 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        }
 
-            .rfc-slice-bg {
-                position: absolute; inset: 0; background: var(--neon);
-                clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-                transition: clip-path 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-            }
+        .rfc-btn-text {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        }
 
-            .rfc-btn-text::before {
-                content: attr(data-text); position: absolute; left: 0; top: 0;
-                color: #000; clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-                transition: clip-path 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-            }
+        .rfc-btn-text::before {
+            content: attr(data-text); position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+            color: #000; clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            transition: clip-path 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        }
 
-            .rfc-btn-slicer:hover .rfc-slice-bg { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-            .rfc-btn-slicer:hover .rfc-btn-text::before { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-            .rfc-btn-slicer:hover { letter-spacing: 8px; border-color: var(--neon); }
-        </script>
-    </div>
+        .rfc-btn-slicer:hover .rfc-slice-bg { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+        .rfc-btn-slicer:hover .rfc-btn-text::before { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+        .rfc-btn-slicer:hover { letter-spacing: 8px; border-color: var(--neon); }
+    </script>
+</div>
     <!-- ********************************************************************************************************************************************* -->
     <div class="anim-item"
          data-id="ID-7086"

@@ -1,18 +1,14 @@
 ﻿.mobile-menu-icon {
-    display: none; 
+    display: none;
 }
 
 @media screen and (max-width: 1420px) {
-
-    
     header {
         height: 90px !important;
         padding: 0 20px 0 0 !important;
     }
 
-    
     .brand {
-            
         margin-left: 4px;
         padding: 5px 0;
     }
@@ -23,9 +19,8 @@
         transform: translateY(-3.2px);
     }
 
-   
     .brand-name {
-        margin-left: -2px !important; 
+        margin-left: -2px !important;
         padding-left: 15px !important;
         border-left: 3px solid var(--neon) !important;
         transform: scale(0.75) !important;
@@ -35,7 +30,6 @@
         justify-content: center !important;
     }
 
-
     nav {
         gap: 10px !important;
     }
@@ -44,37 +38,14 @@
         padding: 8px 14px !important;
         font-size: 0.85rem !important;
     }
-
-
-    /*.rfc-dot {
-        width: 9px; 
-        height: 9px;
-    }
-
-        .rfc-dot.rfc-active {
-            outline: 1px solid #ffffff; 
-            outline-offset: 3px; 
-        }
-
-    .rfc-color-ampel {
-        margin-right: -35px;
-        padding-left: 5px;
-    }*/
 }
 
-/*@media (min-width: 1091px) {
+@media screen and (max-width: 1090px) {
     .main-info {
-        margin-top: -170px !important;
+        margin-top: 0 !important;
+        padding-top: 30px !important;
     }
-}*/
 
-@media (max-width: 1090px) {
-    
-    .main-info {
-        margin-top: 0 !important; /* Setzt den Desktop-Hack zurück */
-        padding-top: 45px !important; /* Sorgt für Abstand unter dem mobilen Header */
-    }
-    
     header {
         height: 75px !important;
         padding: 0 10px 0 0 !important;
@@ -90,7 +61,6 @@
         display: none !important;
     }
 
-    
     .mobile-menu-icon {
         display: flex !important;
         cursor: pointer;
@@ -120,7 +90,6 @@
         }
     }
 
-    
     .mobile-nav {
         position: fixed;
         top: 78px;
@@ -163,7 +132,6 @@
                 transition: all 0.8s ease;
             }
 
-        
         .mobile-nav .rfc-energy-rail {
             all: unset !important;
             display: flex !important;
@@ -187,7 +155,6 @@
             position: relative !important;
         }
 
-            
             .mobile-nav .rfc-energy-node::after,
             .mobile-nav .rfc-energy-node::before {
                 content: none !important;
@@ -214,14 +181,12 @@
             background-color: #f85ef3 !important;
         }
 
-        
         .mobile-nav .rfc-energy-node.rfc-active {
             outline: 1.5px solid #ffffff !important;
             outline-offset: 4px !important;
             transform: scale(1.1) !important;
         }
 
-    
     .brand {
         margin-left: 2px;
         padding: 3px 0;
@@ -237,12 +202,38 @@
         transform: translateY(-3.2px);
     }
 
-    
     .footer-linear {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 25px !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+
+        .footer-linear > span:not([class]) {
+            display: none !important;
+        }
+
+    footer {
+        height: auto !important;
+        padding: 20px 15px 40px 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    html {
+        height: auto !important;
+    }
+
+    .footer-text-group {
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px 15px;
-        text-align: center;
+        line-height: 1.8;
+        padding: 10px 0;
     }
 
     .support-button.diamond-energy {
@@ -257,26 +248,3 @@
         z-index: 2;
     }
 }
-
-
-/* Mobile Fix: Abstände und Stack-Layout 
-@media (max-width: 768px) {
-    .masterpiece-row {
-        margin-bottom: 20px; 
-    }
-
-    .feature-grid {
-        gap: 20px !important; 
-    }
-
-    .showcase-footer {
-        flex-direction: column; 
-        align-items: flex-start !important;
-        gap: 10px;
-    }
-
-    .footer-right {
-        width: 100%;
-        text-align: left;
-    }
-}*/
